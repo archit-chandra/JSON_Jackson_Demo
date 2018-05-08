@@ -1,5 +1,8 @@
 package com.archit.json.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Student {
     private int id;
     private String firstName;
